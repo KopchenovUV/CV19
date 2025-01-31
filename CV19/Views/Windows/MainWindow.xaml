@@ -47,12 +47,14 @@
                 </TabItem.Header>
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="95*"/>
-                        <RowDefinition Height="293*"/>
+                        <RowDefinition Height="79*"/>
+                        <RowDefinition Height="167*"/>
+                        <RowDefinition Height="120*"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="225*"/>
-                        <ColumnDefinition Width="172*"/>
+                        <ColumnDefinition Width="260*"/>
+                        <ColumnDefinition Width="301*"/>
+                        <ColumnDefinition Width="233*"/>
                     </Grid.ColumnDefinitions>
                     <Rectangle Grid.Row="0" Grid.Column="0" 
                                Margin="5,7,5,7"
@@ -61,17 +63,16 @@
                                RadiusX="5" RadiusY="7"/>
                     <Ellipse Grid.Column="1"
                              Fill="Red" Stroke="Blue" 
-                             StrokeThickness="3" Margin="0,95,0,0" Grid.RowSpan="2">
+                             StrokeThickness="3" Margin="0,5,0,0" Grid.RowSpan="2" Grid.Row="1" Grid.ColumnSpan="2">
                         <Ellipse.InputBindings>
-                        <MouseBinding Command="{Binding CloseApplicationCommand}"
+                            <MouseBinding Command="{Binding CloseApplicationCommand}"
                                       MouseAction="LeftDoubleClick"/>
                         </Ellipse.InputBindings>
                     </Ellipse>
 
-                    <GridSplitter Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"
-                                  HorizontalAlignment="Right"
+                    <GridSplitter Grid.Column="1" Grid.Row="0" Grid.RowSpan="3"
                                   Width="4"/>
-                    
+
                 </Grid>
             </TabItem>
 
